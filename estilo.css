@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        hsl(141deg 75% 25%),
+        hsl(141deg 75% 5%)
+
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+}
+
+.container-aplicativo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#container-botoes{
+    display: flex;
+    gap: 10px;
+}
+
+#capitulo {
+    font-size:22.4px ;
+    text-align: center;
+}
+
+#nome-autor {
+    font-size:19.2px ;
+    font-weight: 700;
+}
+
+svg{
+    cursor: pointer;
+}
+
+#anterior, #proximo{
+    width: 40px;
+}
+
+#play-pause{
+    width: 60px;
+}
+
+.pause{
+    display: none;
+}
+
+.tocando .play{
+    display: none;
+}
+
+.tocando .pause{
+    display: block;
+}
